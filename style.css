@@ -1,61 +1,180 @@
-
 .container {
-    background-color: white;
-    justify-content: center;
-    /*width: 70%;
-    height: 100%;*/
-    display: grid;
-    grid-template-columns: 12fr 12fr 12fr 1fr 1fr;
-    grid-template-rows: 300px 600px 65px;
-    grid-template-areas:
-        "box1 box2 box3"
-        "box4 box4 box4"
-        "box5 box5 box5";
+  background-color: white;
+  justify-content: center;
+  width: 1200px;
+  display: grid;
+  grid-template-columns: 12fr 12fr 12fr;
+  grid-template-rows: 300px 600px 65px;
+  grid-template-areas:
+    "box1 box2 box3"
+    "box4 box4 box4"
+    "box5 box5 box5";
 }
 
 .box {
-    border: solid 1px black;
-    background-color: rgb(6, 160, 160);
-    margin: 10px;
+  border: solid 1px black;
+  background-color: rgb(6, 160, 160);
+  margin: 10px;
+  flex-wrap: wrap;
 }
 
 #box-1 {
-    grid-area: box1;
+  grid-area: box1;
 }
 
 #box-2 {
-    grid-area: box2;
+  grid-area: box2;
 }
 
 #box-3 {
-    grid-area: box3;
+  grid-area: box3;
 }
 
 #box-4 {
-    grid-area: box4;
+  grid-area: box4;
 }
 
 #box-5 {
-    grid-area: box5;
-    background-color: rgb(180, 228, 107);
+  grid-area: box5;
+  background-color: rgb(180, 228, 107);
 }
 
 /* Z-index */
 #z1 {
-    z-index: 3;
-    position:relative;
-    bottom: 42%; left: 10px;
-    border-radius: 30%;
+  z-index: 3;
+  position: relative;
+  object-position: 40px;
+  bottom: 42%;
+  left: 10px;
+  border-radius: 30%;
 }
 
 #z2 {
-    z-index: 1;
-    position:relative;
-    bottom: 27%; right: 50px;
+  z-index: 1;
+  position: relative;
+  bottom: 27%;
+  right: 50px;
 }
 
 #z3 {
-    z-index: 5;
-    position:relative;
-    bottom:89%; left: 820px;
+  z-index: 5;
+  position: relative;
+  bottom: 89%;
+  left: 820px;
+}
+
+/* circles */
+.dot1 {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: pink;
+  display: inline-block;
+  /* positioning properties */
+  z-index: 5;
+  position: relative;
+  top: 10px;
+  left: 30px;
+}
+
+.dot2 {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: pink;
+  display: inline-block;
+  /* positioning properties */
+  z-index: 5;
+  position: relative;
+  top: 250px;
+  left: -20px;
+}
+
+.dot3 {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: rgb(222, 222, 118);
+  display: inline-block;
+  /* positioning properties */
+  z-index: 5;
+  position: relative;
+  top: 350px;
+  left: 70px;
+}
+
+.dot4 {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: rgb(222, 222, 118);
+  display: inline-block;
+  /* positioning properties */
+  z-index: 5;
+  position: relative;
+  top: 70px;
+  right: 150px;
+}
+
+.dot5 {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: pink;
+  display: inline-block;
+  /* positioning properties */
+  z-index: 5;
+  position: relative;
+  top: 230px;
+  right: 150px;
+}
+
+.dot6 {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: pink;
+  display: inline-block;
+  /* positioning properties */
+  z-index: 5;
+  position: relative;
+  top: 40px;
+  right: 100px;
+}
+
+/* Media query to adapt the website's display and layout to different screen sizes: laptops, tablets, mobiles, etc. */
+/*@media only screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+  }
+}*/
+
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .container {
+    width: 100%;
+  }
 }
